@@ -3,18 +3,19 @@ import React from 'react';
 import './collection-item.scss';
 
 const CollectionItem = ({id, name, price, imageUrl}) => (
-    <div className='collection-item'>
-        <div 
-        className='image'
-        style={{
-            backgroundImage: `url(${imageUrl})`
-        }} />
-        <div className='collection-footer'>
-            <span className='name'>{name}</span>
-            <span className='price'>{price}</span>
-        </div>
+  <div className='collection-item'>
+    <div 
+    className='image'
+    style={{
+      backgroundImage: `url(${imageUrl})`
+    }} />
+    <div className='collection-footer'>
+      <span className='name'>{name}</span>
+      <span className='price'>{price}</span>
     </div>
-)
+  </div>
+);
+
 // const CollectionItem = (props) => (
 //     <div className='collection-item'>
 //         <div 
@@ -28,5 +29,6 @@ const CollectionItem = ({id, name, price, imageUrl}) => (
 //         </div>
 //     </div>
 // )
-
+  
 export default CollectionItem;
+  
