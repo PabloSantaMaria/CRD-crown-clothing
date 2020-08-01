@@ -28,29 +28,31 @@ class SignIn extends React.Component {
   render() {
     return (
       <div className='sign-in'>
-      <h2>Ya tengo una cuenta</h2>
-      <span>Ingrese con su email y contraseña</span>
-      
-      <form onSubmit={this.handleSubmit}>
-      <FormInput 
-      name='email' 
-      type='email' 
-      label='email'
-      value={this.state.email} 
-      required 
-      handleChange={this.handleChange}/>
-      <FormInput 
-      name='password' 
-      type='password' 
-      label='password'
-      value={this.state.password} 
-      required 
-      handleChange={this.handleChange}/>
-      <div className='buttons'>
-      <CustomButton type='submit'>INGRESAR</CustomButton>
-      <CustomButton onClick={signInWithGoogle} googleSignIn>INGRESAR CON GOOGLE</CustomButton>
-      </div>
-      </form>
+        <h2>Ya tengo una cuenta</h2>
+        <span>Ingrese con su email y contraseña</span>
+        
+        <form onSubmit={this.handleSubmit}>
+          <FormInput 
+            name='email' 
+            type='email' 
+            label='email'
+            value={this.state.email} 
+            required 
+            handleChange={this.handleChange}
+          />
+          <FormInput 
+            name='password' 
+            type='password' 
+            label='contraseña'
+            value={this.state.password} 
+            required 
+            handleChange={this.handleChange}
+          />
+          <div className='buttons'>
+            <CustomButton type='submit'>INGRESAR</CustomButton>
+            <CustomButton onClick={signInWithGoogle} googleSignIn>INGRESAR CON GOOGLE</CustomButton>
+          </div>
+        </form>
       </div>
       )
     }
